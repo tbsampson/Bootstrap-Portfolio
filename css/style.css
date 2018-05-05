@@ -71,20 +71,26 @@ p {
   }
 
   /* Images */
-#pf, #pf-last {
+#pf {
     height: 200px;
     width: 126px;
-	float: left;
 	box-shadow: 5px 5px 10px #ccc;
 	margin: auto 20px 20px auto;
 }
 
-#pf-last {
-    margin: auto auto 20px auto;
+
+.portfolio {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-  .selfie {
+
+.selfie {
     content:url("../images/selfie.jpg");
+    float: left;
 }
 .pf1 {
     content:url("../images/pf1.jpeg");
